@@ -1,0 +1,32 @@
+#list {
+  width: 150px;
+  padding: 0;
+  margin: 0 auto 20px;
+  display: block;
+  list-style: none;
+}
+
+#list li {
+  width: 100px;
+  text-align: center;
+}
+
+.active {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 147, 231, 0.5);
+  box-shadow: 0 0 5px 1px rgba(123, 147, 231, 0.5);
+}
+
+.container {
+  width: 350px;
+  margin: 0 auto;
+  border: 2px solid rgba(61, 93, 217, 0.5);
+}
+.container h1 {
+  text-align: center;
+}
+
+.container_for_btns {
+  display: flex;
+  justify-content: space-around;
+}
