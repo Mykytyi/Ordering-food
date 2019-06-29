@@ -126,9 +126,10 @@ function render() {
       const selected = store.getState().selectedIndex === i;
       event.stopPropagation();
       store.dispatch(selected ? clearSelection() : selectItem(i));
-      li.classList.add('active');
-      console.log(li);
     });
+    if(selectedIndex === i) {
+      li.classList.add('active');
+    }
     listItem.append(li);
   }
 }
@@ -139,4 +140,3 @@ document.addEventListener('click', () => {
 
 store.subscribe(() => render());
 render();
-console.log(store);
